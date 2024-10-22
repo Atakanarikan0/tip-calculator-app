@@ -1,0 +1,285 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #C5E4E7;
+  font-family: "Space Mono";
+}
+
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+#root, #__next {
+  isolation: isolate;
+}
+img {
+  margin-inline: auto;
+  margin-top: 100px;
+  margin-bottom: 88px;
+}
+
+.card {
+  display: flex;
+  margin-inline: auto;
+  width: 920px;
+  background-color: #FFF;
+  padding: 45px 48px;
+  border-radius: 25px;
+  gap: 48px;
+}
+.invoice-total{
+  margin-bottom: 40px;
+}
+.invoice-total input {
+  background: url(../img/dolar-icon.svg) no-repeat  15px, #F3F9FA;
+  text-align: right;
+  padding-right: 17px;
+  border: none;
+  width: 379px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  color: #00474B;
+  border-radius: 5px;
+  outline: none
+  
+}
+
+.invoice-total input:focus {
+  border: 2px solid #26C2AE;
+}
+.total-people input:focus {
+  border: 2px solid #26C2AE;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #5E7A7D;
+  margin-bottom: 6px;
+}
+
+/* Select Tip */
+.tip-selector input {
+  background: #F3F9FA;
+  text-align: right;
+  padding-right: 17px;
+  border: none;
+  width: 379px;
+  border-radius: 5px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  color: #00474B;
+  outline: none;
+}
+.tip-selector input:focus {
+  border: 2px solid #26C2AE;
+
+}
+
+.total-people > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.warning-message {
+  display: none;
+  color: #E17457;
+}
+  
+
+
+/* Number of people */
+.total-people {
+  margin-top: 40px;
+}
+.total-people input {
+  background: url(../img/people-icon.svg) no-repeat 15px , #F3F9FA;
+  text-align: right;
+  padding-right: 17px;
+  border: none;
+  width: 379px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  color: #00474B;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.62px;
+  text-align: center;
+  color: #00474B;
+  background-color: #26C2AE;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 9px 37px;
+}
+.btn:hover {
+  background-color: #9FE8DF;
+}
+
+/* Card right */
+.card-right {
+  background-color: #00474B;
+  padding: 40px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.tip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip h3 {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.tip span {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.25px;
+  color: #7F9D9F;
+
+}
+.tip input {
+  background-color: inherit;
+  color: #26C2AE;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71.09px;
+  letter-spacing: -1px;
+  width: 143px;
+  border: none;
+  outline: none;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 41px;
+}
+
+.total h3 {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.total span {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.25px;
+  color: #7F9D9F;
+
+}
+.total input {
+  background-color: inherit;
+  color: #26C2AE;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71.09px;
+  letter-spacing: -1px;
+  width: 143px;
+  border: none;
+  outline: none;
+
+
+}
+
+.btn-clear {
+  width: 100%;
+  margin-top: 122px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.62px;
+  text-align: center;
+  color: #00474B;
+  background-color: #26C2AE;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 37px;
+  cursor: pointer;
+}
+.btn-clear:hover {
+  background-color: #9FE8DF;
+}
+
+
+@media (width <= 375px) {
+.card {
+  display: block;
+  padding: 32px;
+  width: 375px;
+}
+.invoice-total {
+  margin-bottom: 32px;
+}
+.invoice-total input {
+  width: 311px;
+}
+.tip-selector input {
+  width: 311px;
+}
+.total-people input {
+  width: 311px;
+}
+.card-left {
+  width: 327px;
+}
+.card-right {
+  width: 327px;
+  padding: 24px;
+}
+.input-group {
+  width: 311px;
+}
+.input-group input {
+  width: 143px;
+}
+.invoice-total {
+  width: 311px;
+}
+.btn {
+  width: 100%;
+  margin-bottom: 39px;
+}
+.btn-clear {
+  width: 100%;
+  margin-top: 32px;
+}
+}

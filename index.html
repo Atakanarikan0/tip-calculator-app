@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/calculator.css">
+  <script src="assets/js/calculator.js" defer></script>
+</head>
+<body>
+  <img src="assets/img/SPLITTER.png" alt="">
+  <div class="card">
+    <div class="card-left">
+      <div class="invoice-total">
+        <h3>Bill</h3>
+        <input type="text" id="billAmount" value="0">
+      </div>
+      <div class="tip-selector">
+        <h3>Select Tip %</h3>
+        <input type="text" id="tipPercentage" value="0%">
+
+      </div>
+      <div class="total-people">
+        <div>
+          <h3>Number of People</h3>
+          <h3 class="warning-message" id="warningMsg">Can’t be zero</h3>
+        </div>
+        <input type="text" id="numOfPeople" value="0">
+      </div>
+      <button id="btnCalculate" class="btn">Calculate</button>
+    </div>
+    <div class="card-right">
+      <div class="tip">
+        <div>
+          <h3>Tip Amount</h3>
+          <span>/ person</span>
+        </div>
+        <input type="text" value="$0.00" id="tip">
+      </div>
+      <div class="total">
+        <div>
+          <h3>Total</h3>
+          <span>/ person</span>
+        </div>
+        <input type="text" value="$0.00" id="total">
+      </div>
+      <button id="btnClear" class="btn-clear">RESET</button>
+
+    </div>
+  </div>
+</body>
+</html>
